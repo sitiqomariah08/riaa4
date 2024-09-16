@@ -23,7 +23,7 @@ public class Throws {
     }
 
     public static void main(String[] args) {
-        Throws contoh = new Throws;
+        Throws contoh = new Throws();
         
         try {
             contoh.prosesDataDenganThrows(); // Memanggil metode yang melempar pengecualian
