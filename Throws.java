@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Careen Emilza
+ * @author IT GRC
  */
 public class Throws {
 
