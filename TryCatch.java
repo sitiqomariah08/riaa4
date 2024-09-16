@@ -4,24 +4,32 @@
  */
 package pertemuankeempat;
 
+import java.util.Scanner;
+
 /**
  *
- * @author Careen Emilza
+ * @author IT GRC
  */
 public class TryCatch {
 
-    public static void main(String[] args) {
-        int[] angka = {1, 2, 3};
-
+     // Metode dengan try-catch untuk menangani NumberFormatException
+    public void prosesDataDenganTryCatch() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan angka (Try-Catch): ");
+        
         try {
-            // Mencoba mengakses elemen array yang berada di luar batas
-            int nilai = angka[5];  // Indeks 5 di luar batas (array hanya punya 3 elemen)
-            System.out.println("Nilai elemen: " + nilai);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            // Menangani pengecualian jika indeks di luar batas
-            System.out.println("Error: Indeks array di luar batas.");
+            String input = scanner.nextLine(); // Membaca input dari pengguna
+            int angka = Integer.parseInt(input); // Mencoba konversi input ke angka
+            System.out.println("Angka yang dimasukkan (Try-Catch): " + angka);
+        } catch (NumberFormatException e) {
+            // Menangani NumberFormatException jika input bukan angka yang valid
+            System.out.println("Error di metode Try-Catch: Input tidak bisa dikonversi menjadi angka!");
         }
+    }
 
-        System.out.println("Program selesai.");
+    public static void main(String[] args) {
+        TryCatch contoh = new TryCatch();
+        
+contoh.prosesDataDenganTryCatch(); // Memanggil metode dengan try-catch
     }
 }
