@@ -15,7 +15,7 @@ Custom Exception adalah pengecualian (exception) yang didefinisikan oleh penggun
 1. Mewarisi dari Exception atau RuntimeException : Custom exception dapat dibuat dengan mewarisi kelas Exception (untuk pengecualian checked) atau RuntimeException (untuk pengecualian unchecked).
 2. Menyediakan Konstruktor : Dalam suatu class Exception dapat menambahkan berbagai konstruktor untuk exception, seperti konstruktor default dan konstruktor yang menerima pesan atau penyebab kesalahan.
 
-## Exception Handling
+# **Exception Handling**
 
 `Apa itu Exception?` Exception adalah kesalahan (error) atau situasi yang tidak terduga yang terjadi saat program berjalan. Contoh umum dari exception adalah: 
 1. Pembagian dengan angka nol.
