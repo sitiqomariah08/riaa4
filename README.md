@@ -1,4 +1,4 @@
-**Operasi CRUD dengan PostgreSQL dan Java**
+# **Operasi CRUD dengan PostgreSQL dan Java**
 
 ## Deskripsi tugas
 Pada tugas Pemrograman Berbasis Objek (PBO) pertemuan 4 ini yaitu mengimplementasikan operasi CRUD (Create, Read, Update, Delete) menggunakan Java dan database PostgreSQL, dengan database **TOKOBUKU2.** Proyek ini mencakup menampilkan, menambah, menghapus, dan mengupdate data tamu. Selain itu, saya juga membedakan penggunaan Exception `throws` dan `try-catch`, serta menggunakan **NumberFormatException** untuk melihat hasil output exception keduanya. Saya juga membuat custom exception dengan nama **RiaException** untuk mengelola skenario pengecualian tertentu.
