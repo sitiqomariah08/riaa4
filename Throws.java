@@ -4,25 +4,32 @@
  */
 package pertemuankeempat;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Careen Emilza
  */
 public class Throws {
 
-    // Method yang melemparkan pengecualian NumberFormatException
-    public static void konversiStringKeAngka() throws NumberFormatException {
-        String angkaString = "abc"; // String ini tidak bisa dikonversi menjadi angka
-        int angka = Integer.parseInt(angkaString); // Akan memunculkan NumberFormatException
+    // Metode dengan throws untuk NumberFormatException
+    public void prosesDataDenganThrows() throws NumberFormatException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan angka (Throws): ");
+        
+        String input = scanner.nextLine(); // Membaca input dari pengguna
+        int angka = Integer.parseInt(input); // Mencoba konversi input ke angka, bisa memunculkan NumberFormatException
+        System.out.println("Angka yang dimasukkan (Throws): " + angka);
     }
 
     public static void main(String[] args) {
+        Throws contoh = new Throws;
+        
         try {
-            // Mencoba memanggil metode yang bisa menyebabkan pengecualian
-            konversiStringKeAngka();
+            contoh.prosesDataDenganThrows(); // Memanggil metode yang melempar pengecualian
         } catch (NumberFormatException e) {
-            // Menangkap pengecualian NumberFormatException dan menampilkan pesan
-            System.out.println("Error: Tidak bisa mengonversi string ke angka!");
+            // Menangani pengecualian dari metode dengan throws
+            System.out.println("Error di metode Throws: Input tidak bisa dikonversi menjadi angka!");
         }
     }
 }
