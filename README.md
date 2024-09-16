@@ -10,7 +10,7 @@ CRUD merupakan empat operasi dasar yang digunakan dalam aplikasi basis data dan 
 3. `Update` (memperbarui) : Operasi Update digunakan untuk mengubah data yang sudah ada di database. Dengan kata lain, operasi ini memungkinkan pengguna untuk memperbarui informasi yang sudah disimpan sebelumnya (dalam SQL menggunakan perintah `UPDATE`).
 4. `Delete` (menghapus) : Operasi Delete digunakan untuk menghapus data dari database. Ini dapat dilakukan ketika data tidak lagi relevan atau diperlukan (dalam SQL menggunakan perintah `DELETE`).
 
-## Custom Exception
+# **Custom Exception**
 Custom Exception adalah pengecualian (exception) yang didefinisikan oleh pengguna untuk menangani situasi atau kondisi tertentu yang tidak tercakup oleh pengecualian bawaan Java seperti NullPointerException atau ArithmeticException. Membuat custom exception memungkinkan kita untuk menangani kasus-kasus spesifik dalam aplikasi kita secara lebih terorganisir dan sesuai dengan kebutuhan. Dalam program yang saya buat, saya memberikan nama custom exception dengan nama RiaException yang merupakan custom exception yang didefinisikan oleh pengguna untuk situasi khusus. Cara Membuat Custom Exception yaitu :
 1. Mewarisi dari Exception atau RuntimeException : Custom exception dapat dibuat dengan mewarisi kelas Exception (untuk pengecualian checked) atau RuntimeException (untuk pengecualian unchecked).
 2. Menyediakan Konstruktor : Dalam suatu class Exception dapat menambahkan berbagai konstruktor untuk exception, seperti konstruktor default dan konstruktor yang menerima pesan atau penyebab kesalahan.
