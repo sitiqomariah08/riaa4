@@ -8,7 +8,7 @@ package pertemuankeempat;
  *
  * @author Careen Emilza
  */
-public class RiaException extends Exception {
+public class RiaException extends NumberFormatException {
     
     // Konstruktor custom exception
     public RiaException(String message) {
